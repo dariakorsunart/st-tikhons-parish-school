@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import AboutSchool from './pages/AboutSchool';
+import AboutChurch from './pages/AboutChurch';
+import Teachers from './pages/Teachers';
+import Schedule from './pages/Schedule';
+import SchoolCharter from './pages/SchoolCharter';
+import SchoolNutrition from './pages/SchoolNutrition';
+import Calendar from './pages/Calendar';
+import Gallery from './pages/Gallery';
+import Contacts from './pages/Contacts';
+import './styles.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <div className="main-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-school" element={<AboutSchool />} />
+          <Route path="/about-church" element={<AboutChurch />} />
+          <Route path="/teachers" element={<Teachers />} />
+          <Route path="/schedule" element={<Schedule />} />
+          <Route path="/school-charter" element={<SchoolCharter />} />
+          <Route path="/school-nutrition" element={<SchoolNutrition />} />
+          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contacts" element={<Contacts />} />
+        </Routes>
+      </div>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

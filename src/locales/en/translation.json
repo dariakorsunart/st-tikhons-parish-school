@@ -1,0 +1,94 @@
+{
+  "header": {
+    "school_title": "Home",
+    "about_school": "About School",
+    "about_church": "About Church",
+    "teachers": "Teachers",
+    "schedule": "Schedule",
+    "charter": "School Charter",
+    "school_nutrition": "School Nutrition",
+    "calendar": "Calendar",
+    "gallery": "Photo Gallery",
+    "contacts": "Contacts"
+  },
+  "home": {
+    "welcome": "Russian Orthodox Parish School at the Church of St. Tikhon",
+    "mission_text": "We welcome you, dear ones in Christ, to the website of the Russian Orthodox Church Outside of Russia of St. Patriarch Tikhon and the New Martyrs of Russia!"
+  },
+ "about_school": {
+  "title": "About the School",
+  "welcome_text": "Welcome to our school!",
+  "block_1_title": "About Our School",
+  "block_1_text": "At our school, children study: the Divine Law, the History of Russia, Ukraine, and Belarus (the era of the Russian Empire and the USSR), Russian Language, Literature, and Mathematics. Classes are held on Saturdays from 9:30 a.m. to 2:00 p.m. Each lesson lasts 45 minutes, with short 5-minute breaks in between. After the first two lessons, students have a longer recess of 20 minutes.",
+  "block_1_alt": "Photo of the school building",
+  "block_2_title": "Material Support",
+  "block_2_text": "The school is a charitable organization and does not aim to generate profit from its activities, in accordance with Section 1.3 of the School Charter. When registering at our school, all students are given a one-month trial period. During this time, students, teachers, and parents assess how well the school and the student meet each other’s expectations.",
+  "block_2_alt": "Children in the classroom",
+  "block_3_title": "Charter and Contacts",
+  "block_3_text": "The School’s budget is formed from:",
+  "budget_list_1": "voluntary donations from parishioners and parents;",
+  "budget_list_2": "sponsorship assistance;",
+  "budget_list_3": "funds allocated by the rector from the parish budget.",
+  "contacts": "For questions, please contact Fr. Eugene (Principal) or Elena A. Sidorova (Vice Principal).",
+  "block_3_alt": "Students in the library"
+},
+  "about_church": {
+    "title": "About the Church",
+    "text": "A Greeting to Orthodox Christians from Kitchener, Waterloo, Cambridge, and Guelph",
+    "greetings": "We warmly welcome you, dear in Christ, to the website of the Russian Orthodox Church Abroad of St. Patriarch Tikhon and the New Martyrs of Russia!",
+    "description": "For over 80 years, the Russian Orthodox Church Abroad has faithfully preserved the Orthodox faith, upheld the traditions of the 1,000-year-old Russian Church, provided help to the suffering Russian people, spiritually guided and nourished its faithful children — both Russians and non-Russians who have embraced Orthodoxy — and to testify to the truth of Orthodoxy throughout the World."
+  },
+  "teachers": {
+    "title": "Teachers",
+    "teachers_list_title": "Our Teachers"
+  },
+  "schedule": {
+    "title": "Class schedule",
+    "saturday": "Saturday",
+    "class_group": "Class",
+    "teacher": "Teacher",
+    "no_classes": "No classes on this day."
+  },
+  "charter": {
+    "title": "School Charter",
+    "text": "Our school's charter is based on the principles of respect, responsibility, and mutual support. We strive to create an atmosphere that fosters the spiritual and intellectual growth of every student."
+  },
+  "school_nutrition": {
+    "title": "School Nutrition",
+    "text": "Recently, some parents approached the school administration regarding children who have medical restrictions on certain foods (we have students with diabetes and celiac disease, i.e., gluten intolerance). In response, our director, Fr. Evgeny, issued a document containing rules that regulate what foods may or may not be brought to school for lunch. This document also limits bringing food for shared consumption. Please note that if you wish to bring food to share with other children — such as for your child’s birthday or Name Day — it MUST be approved in advance by the class teacher and the school administration. These foods must not be from the “fast food” category. We kindly ask you to remember that some children, due to their age, cannot control their desire to have treats, even though certain foods are strictly prohibited for them for medical reasons. Our school is committed to fostering and supporting our students’ love for a healthy lifestyle and nutritious eating habits."
+  },
+  "calendar": {
+    "title": "Calendar",
+    "text": "By clicking the button below, you will be taken to Google Classroom, where you can always find information about upcoming homework assignments for our school’s students."
+  },
+ "gallery": {
+    "title": "Photo Gallery",
+    "exhibitions_title": "Exhibitions",
+    "exhibitions_description":"Our students are truly talented! Together with our wonderful art and creativity teacher, Margarita Yuryevna Kuznetsova, they regularly take part in local exhibitions, where they joyfully present their paintings, crafts, and projects. For the children, it is always a real celebration — a chance to share their work, hear words of support and inspiration. Such moments instill in them a lifelong love for creativity and the arts.",
+    "concerts_title": "Concerts",
+    "concerts_description": "Snaps from festive concerts, parties, and other events we hold for our students.",
+    "creativity_title": "Creativity Lessons",
+    "creativity_description": "Photos from creativity classes where children learn to draw, sculpt, and make crafts."
+  },
+  "contacts": {
+    "title": "Contacts",
+    "main": "School Principal: Fr. Eugene Shchukin",
+    "email": "e-mail: fr.eugene@sttikhon.org",
+    "address": "Address: 100 Pollock Avenue, Cambridge, ON",
+    "head_teacher": "Vice Principal: Elena A. Sidorova",
+    "phone": "phone: +1 (226)-978-3810",
+    "form_title": "Registration Form",
+    "name_placeholder": "Full Name",
+    "email_placeholder": "Email",
+    "message_placeholder": "Message",
+    "submit_button": "Submit",
+    "success_message": "Message sent successfully!",
+    "error_message": "Error sending message."
+  },
+  "footer": {
+    "school_name": "Russian Orthodox Parish School at St. Tikhon's Church and the New Martyrs of Russia",
+    "phone_label": "phone: +1 (226)-978-3810",
+    "email_label": "e-mail: fr.eugene@sttikhon.org",
+    "copyright_text": "© 2025. All rights reserved. Website is the intellectual property of the Russian Orthodox Parish School at St. Tikhon's Church and the New Martyrs of Russia."
+}
+}
