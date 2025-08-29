@@ -15,7 +15,7 @@ function Teachers() {
           {/* Общее фото учителей вверху страницы */}
           <div className="group-photo-container">
           <img 
-            src="images/teachers_photo.jpg" 
+            src={process.env.PUBLIC_URL +"/images/teachers_photo.jpg"} 
             alt={t('teachers.group_photo_alt')} 
             className="group-photo" 
           />

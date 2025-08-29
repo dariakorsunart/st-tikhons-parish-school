@@ -7,7 +7,7 @@ function AboutSchool() {
     <div className="page">
       <div className="home-content">
         <h1>{t('about_school.title')}</h1>
-        <img src="/images/ornament-top.jpg" alt="ornament-top-left" className="ornament-top" />
+        <img src={process.env.PUBLIC_URL +"/images/ornament-top.jpg"} alt="ornament-top-left" className="ornament-top" />
         {/* Блок 1: Текст слева, Изображение справа */}
         <div className="about-block">
           <div className="about-text-column">
@@ -15,7 +15,7 @@ function AboutSchool() {
             <p>{t('about_school.block_1_text')}</p>
           </div>
           <div className="about-image-column">
-            <img src="/images/church6.jpg" alt={t('about_school.block_1_alt')} />
+            <img src={process.env.PUBLIC_URL +"/images/church6.jpg"} alt={t('about_school.block_1_alt')} />
           </div>
         </div>
 
@@ -26,7 +26,7 @@ function AboutSchool() {
             <p>{t('about_school.block_2_text')}</p>
           </div>
           <div className="about-image-column">
-            <img src="/images/church7.jpg" alt={t('about_school.block_2_alt')} />
+            <img src={process.env.PUBLIC_URL +"/images/church7.jpg"} alt={t('about_school.block_2_alt')} />
           </div>
         </div>
 
@@ -43,7 +43,7 @@ function AboutSchool() {
         <p>{t('about_school.contacts')}</p>
           </div>
           <div className="about-image-column">
-            <img src="/images/studyprocess6.jpg" alt={t('about_school.block_3_alt')} />
+            <img src={process.env.PUBLIC_URL +"/images/studyprocess6.jpg"} alt={t('about_school.block_3_alt')} />
           </div>
         </div>
       </div>

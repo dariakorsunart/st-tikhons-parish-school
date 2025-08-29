@@ -5,7 +5,7 @@ function SchoolNutrition() {
   const { t } = useTranslation();
 
  // Путь к вашему PDF-файлу
-  const pdfUrl = '/School_Nutrition.pdf';
+  const pdfUrl = process.env.PUBLIC_URL +'/School_Nutrition.pdf';
 
 
   return (

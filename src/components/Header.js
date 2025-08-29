@@ -24,10 +24,10 @@ function Header() {
           <h1 className="school-title">Русская Православная Приходская Школа <br/>
           при Храме cвятителя Тихона <br/> и Новомучеников Российских</h1>
            {/* Десктопный логотип */}
-          <img src="/images/logo2.jpg" alt="School logo" className="header-logo-desktop"/>
-          <img src="/images/logo1.jpg" alt="School logo" className="header-logo-mobile"/>    
+          <img src={process.env.PUBLIC_URL +"/images/logo2.jpg"} alt="School logo" className="header-logo-desktop"/>
+          <img src={process.env.PUBLIC_URL +"/images/logo1.jpg"} alt="School logo" className="header-logo-mobile"/>    
         </Link>
-        
+
      <div className="header-right">
         <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
           {/* Добавляем ссылку на главную страницу */}

@@ -5,7 +5,7 @@ function SchoolCharter() {
   const { t } = useTranslation();
 
   // Путь к вашему PDF-файлу
-  const pdfUrl = '/school_charter.pdf';
+  const pdfUrl = process.env.PUBLIC_URL +'/school_charter.pdf';
 
   return (
     <div className="page charter-page">

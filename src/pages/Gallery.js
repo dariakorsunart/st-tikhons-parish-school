@@ -25,7 +25,7 @@ const gallerySections = {
     '/images/exhibition11.jpg',
     '/images/exhibition12.jpg',
     '/images/exhibition13.jpg'
-  ],
+  ].map(imagePath => process.env.PUBLIC_URL + imagePath),
   concerts: [
     '/images/concert1.jpg',
     '/images/concert2.jpg',
@@ -45,7 +45,7 @@ const gallerySections = {
     '/images/concert16.jpg',
     '/images/concert17.jpg',
     '/images/concert18.jpg'
-  ],
+  ].map(imagePath => process.env.PUBLIC_URL + imagePath),
   creativity: [
     '/images/art3.jpg',
     '/images/art2.jpg',
@@ -59,7 +59,7 @@ const gallerySections = {
     '/images/drawing6.jpg',
     '/images/creation8.jpg',
     '/images/art4.jpg',
-  ]
+  ].map(imagePath => process.env.PUBLIC_URL + imagePath)
 };
 
 function Gallery() {

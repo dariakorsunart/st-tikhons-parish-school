@@ -18,7 +18,7 @@ function AboutChurch() {
           
           {/* Колонка с изображением справа */}
           <div className="church-image-column">
-            <img src="/images/saintTikhon.jpg" alt="St. Patriarch Tikhon" className="church-image" />
+            <img src={process.env.PUBLIC_URL +"/images/saintTikhon.jpg"} alt="St. Patriarch Tikhon" className="church-image" />
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ function Schedule() {
   const { t } = useTranslation();
 
   // Путь к вашему PDF-файлу
-  const pdfUrl = '/Schedule 2025-2026.pdf';
+  const pdfUrl = process.env.PUBLIC_URL +'/Schedule 2025-2026.pdf';
 
 
   return (
@@ -35,7 +35,7 @@ function Schedule() {
         rel="noopener noreferrer" 
         className="google-classroom-button"
       >
-         <img src="/images/google-classroom.png" alt="Google Classroom Icon" className="button-icon" />
+         <img src={process.env.PUBLIC_URL +"/images/google-classroom.png"} alt="Google Classroom Icon" className="button-icon" />
         {t('Google Classroom')}
       </a>
       </div>
