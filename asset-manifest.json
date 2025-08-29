@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/st-tikhons-parish-school/static/css/main.4a105423.css",
-    "main.js": "/st-tikhons-parish-school/static/js/main.98e35927.js",
-    "static/js/453.18f8b9aa.chunk.js": "/st-tikhons-parish-school/static/js/453.18f8b9aa.chunk.js",
-    "static/media/slick.svg": "/st-tikhons-parish-school/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/st-tikhons-parish-school/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/st-tikhons-parish-school/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/st-tikhons-parish-school/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/st-tikhons-parish-school/index.html",
-    "main.4a105423.css.map": "/st-tikhons-parish-school/static/css/main.4a105423.css.map",
-    "main.98e35927.js.map": "/st-tikhons-parish-school/static/js/main.98e35927.js.map",
-    "453.18f8b9aa.chunk.js.map": "/st-tikhons-parish-school/static/js/453.18f8b9aa.chunk.js.map"
+    "main.css": "https://dariakorsunart.github.io/st-tikhons-parish-school/static/css/main.60d14a85.css",
+    "main.js": "https://dariakorsunart.github.io/st-tikhons-parish-school/static/js/main.270e1a1a.js",
+    "static/js/453.18f8b9aa.chunk.js": "https://dariakorsunart.github.io/st-tikhons-parish-school/static/js/453.18f8b9aa.chunk.js",
+    "static/media/slick.svg": "https://dariakorsunart.github.io/st-tikhons-parish-school/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "https://dariakorsunart.github.io/st-tikhons-parish-school/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "https://dariakorsunart.github.io/st-tikhons-parish-school/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "https://dariakorsunart.github.io/st-tikhons-parish-school/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "https://dariakorsunart.github.io/st-tikhons-parish-school/index.html",
+    "main.60d14a85.css.map": "https://dariakorsunart.github.io/st-tikhons-parish-school/static/css/main.60d14a85.css.map",
+    "main.270e1a1a.js.map": "https://dariakorsunart.github.io/st-tikhons-parish-school/static/js/main.270e1a1a.js.map",
+    "453.18f8b9aa.chunk.js.map": "https://dariakorsunart.github.io/st-tikhons-parish-school/static/js/453.18f8b9aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a105423.css",
-    "static/js/main.98e35927.js"
+    "static/css/main.60d14a85.css",
+    "static/js/main.270e1a1a.js"
   ]
 }
