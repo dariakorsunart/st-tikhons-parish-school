@@ -10,6 +10,8 @@ body {
     background-color: #f4f7f6;
 }
 
+
+
 .main-content {
     padding-top: 105px; /* Отступ, чтобы контент не скрывался за хедером */
     background-color: rgb(243, 221, 182);
@@ -651,7 +653,6 @@ p {
     padding: 12px;
     font-size: 1rem;
     border: 1px solid #ddd;
-    margin-bottom: 20px; /* Добавьте отступ снизу к каждому полю */
     border-radius: 6px;
     box-sizing: border-box; /* Гарантирует, что отступы не добавляют ширины */
     transition: border-color 0.3s ease, box-shadow 0.3s ease;

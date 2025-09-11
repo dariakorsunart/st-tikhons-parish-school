@@ -1,12 +1,17 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Viewer } from '@react-pdf-viewer/core';
+import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 
+// Import styles
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 function SchoolNutrition() {
   const { t } = useTranslation();
 
  // Путь к вашему PDF-файлу
   const pdfUrl = process.env.PUBLIC_URL +'/School_Nutrition.pdf';
-
+  const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
   return (
     <div className="page">
@@ -14,18 +19,14 @@ function SchoolNutrition() {
         <h1>{t('school_nutrition.title')}</h1>
         <p>{t('school_nutrition.text')}</p>
           
-          {/* Встраиваем PDF-файл с помощью <iframe>.
-          Атрибут 'src' указывает путь к файлу.
-          */}
-        <iframe
-          title="School Nutrition"
-          src={pdfUrl}
-          width="100%"
-          height="800px" // Высота, чтобы файл было удобно читать
-          style={{ border: 'none' }}
-        >
-          <p>Ваш браузер не поддерживает встроенные PDF-файлы. <a href={pdfUrl}>Нажмите здесь, чтобы скачать файл.</a></p>
-        </iframe>
+        <div style={{ height: '100%' }}>
+          <Viewer
+            fileUrl={pdfUrl}
+            plugins={[
+              defaultLayoutPluginInstance
+            ]}
+          />
+        </div>
       </div>
     </div>
   );

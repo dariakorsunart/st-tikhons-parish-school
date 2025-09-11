@@ -1,29 +1,32 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Viewer } from '@react-pdf-viewer/core';
+import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
+
+// Import styles
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 function SchoolCharter() {
   const { t } = useTranslation();
 
   // Путь к вашему PDF-файлу
   const pdfUrl = process.env.PUBLIC_URL +'/school_charter.pdf';
+  const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
   return (
     <div className="page charter-page">
       <div className="home-content">
         <h1>{t('charter.title')}</h1>
         
-        {/* Встраиваем PDF-файл с помощью <iframe>.
-          Атрибут 'src' указывает путь к файлу.
-        */}
-        <iframe
-          title="School Charter"
-          src={pdfUrl}
-          width="100%"
-          height="800px" // Высота, чтобы файл было удобно читать
-          style={{ border: 'none' }}
-        >
-          <p>Ваш браузер не поддерживает встроенные PDF-файлы. <a href={pdfUrl}>Нажмите здесь, чтобы скачать файл.</a></p>
-        </iframe>
+        <div style={{ height: '100%' }}>
+          <Viewer
+            fileUrl={pdfUrl}
+            plugins={[
+              defaultLayoutPluginInstance
+            ]}
+          />
+        </div>
 
         <p>{t('charter.text')}</p>
       </div>
