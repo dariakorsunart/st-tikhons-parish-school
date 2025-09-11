@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 import Modal from 'react-modal';
 
-// Обязательно импортируйте стили для карусели
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-// Укажите корневой элемент для модального окна. В стандартном React-проекте это '#root'.
 Modal.setAppElement('#root');
 
 const gallerySections = {
@@ -62,34 +60,65 @@ const gallerySections = {
   ].map(imagePath => process.env.PUBLIC_URL + imagePath)
 };
 
-function Gallery() {
+const GallerySection = ({ sectionKey, images, openModal }) => {
   const { t } = useTranslation();
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState('');
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth <= 500);
+  }, []);
 
   const sliderSettings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Показывать 3 слайда на широких экранах
+    slidesToShow: isMobile ? 1 : 3, 
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024, // Экран до 1024px (планшеты)
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 2, // Показывать 2 слайда
+          slidesToShow: 2, 
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 500, // Экран до 500px (большинство мобильных)
+        breakpoint: 500,
         settings: {
-          slidesToShow: 1, // Показывать 1 слайд
+          slidesToShow: 1, 
           slidesToScroll: 1,
         },
       },
     ],
   };
+
+  return (
+    <section key={sectionKey} className="gallery-section">
+      <h3>{t(`gallery.${sectionKey}_title`)}</h3>
+      <p className="gallery-description">{t(`gallery.${sectionKey}_description`)}</p>
+      <Slider {...sliderSettings}>
+        {images.map((photo, index) => (
+          <div 
+            key={index} 
+            className="gallery-item-container" 
+            onClick={() => openModal(photo)}
+          >
+            <img 
+              src={photo} 
+              alt={t(`gallery.${sectionKey}_title`) + ` ${index + 1}`} 
+              className="gallery-image" 
+            />
+          </div>
+        ))}
+      </Slider>
+    </section>
+  );
+};
+
+function Gallery() {
+  const { t } = useTranslation();
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState('');
 
   const openModal = (image) => {
     setSelectedImage(image);
@@ -107,26 +136,12 @@ function Gallery() {
         <h1>{t('gallery.title')}</h1>
         
         {Object.keys(gallerySections).map((sectionKey) => (
-          <section key={sectionKey} className="gallery-section">
-            <h3>{t(`gallery.${sectionKey}_title`)}</h3>
-            {/* Добавляем описание раздела */}
-            <p className="gallery-description">{t(`gallery.${sectionKey}_description`)}</p>
-            <Slider {...sliderSettings}>
-              {gallerySections[sectionKey].map((photo, index) => (
-                <div 
-                  key={index} 
-                  className="gallery-item-container" 
-                  onClick={() => openModal(photo)}
-                >
-                  <img 
-                    src={photo} 
-                    alt={t(`gallery.${sectionKey}_title`) + ` ${index + 1}`} 
-                    className="gallery-image" 
-                  />
-                </div>
-              ))}
-            </Slider>
-          </section>
+          <GallerySection
+            key={sectionKey}
+            sectionKey={sectionKey}
+            images={gallerySections[sectionKey]}
+            openModal={openModal}
+          />
         ))}
 
         <Modal 

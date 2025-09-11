@@ -744,136 +744,6 @@ p {
       }
 }
 
-  
-
-/* ======================================= */
-/* Стили для очень узких экранов (до 540px) */
-/* ======================================= */
-@media (max-width: 540px) {
-   .main-content {
-        padding-top: 180px  !important; /* Отступ, чтобы контент не скрывался за хедером */
-    }
-    
-    /* Хедер: выстраиваем всё в один столбец */
-    .header {
-        padding: 0.2rem 1rem;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* 1. Логотип (первый элемент) */
-    .header-brand {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        order: 1; /* Логотип будет первым */
-    }
-
-    .header-logo-mobile {
-        height: 200px;
-    }
-
-    .school-title {
-        display: none;
-    }
-
-    /* 2. Правая колонка с кнопками и гамбургером (второй элемент) */
-    .header-right {
-        display: flex;
-        flex-direction: column; /* Элементы внутри будут в колонку */
-        align-items: center;
-        width: 100%;
-        order: 2; /* Колонка с кнопками и гамбургером будет второй */
-    }
-
-    /* 3. Кнопки переключения языка (внутри .header-right) */
-    .lang-switcher {
-        display: flex;
-        flex-direction: row; /* Выстраиваем кнопки в ряд */
-        gap: 10px;
-        order: 1; /* Кнопки будут первым элементом внутри .header-right */
-        margin-bottom: 15px;
-    }
-
-    .lang-switcher button {
-        padding: 8px 15px;
-        font-size: 0.9rem;
-    }
-
-    /* 4. Гамбургер (внутри .header-right) */
-    .menu-toggle {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        cursor: pointer;
-        background: none;
-        border: none;
-        order: 2; /* Гамбургер будет вторым элементом внутри .header-right */
-    }
-
-    .nav-links {
-        display: none; /* Скрываем меню навигации */
-    }
-
-    .header-images {
-        flex-direction: column;
-        align-items: center;
-      }
-      /* СКРЫВАЕМ ОРНАМЕНТЫ */
-      .header-images .ornament {
-        display: none;
-      }
-      .header-images .home-logo {
-        max-width: 250px;
-      }
-      .home-content {
-        padding: 1rem;
-      }
-      /*Контактная форма*/
-      .contact-form {
-        /* Эти стили убирают боковые отступы, чтобы форма занимала всю доступную ширину */
-        /* Это обеспечивает идеальное центрирование и не дает ей вылезать за пределы экрана */
-        margin: 0;
-        padding: 8px; /* Уменьшаем внутренний отступ для небольших экранов */
-        border-radius: 10px; /* Опционально: убираем скругление углов на мобильных */
-        box-shadow:  0 10px 25px rgba(0, 0, 0, 0.1);
-      }
-    
-      .contact-form h2 {
-        font-size: 1.5rem; /* Уменьшаем заголовок */
-      }
-    
-      input[type="text"],
-      input[type="email"],
-      textarea,
-      button[type="submit"] {
-        font-size: 0.9rem; /* Уменьшаем размер текста в полях и кнопке */
-        padding: 10px; /* Уменьшаем внутренние отступы */
-      }
-      /* ... другие стили для формы ... */
-  
-  /* =========================================================
-     Кнопка отправки на мобильных
-     ========================================================= */
-  button[type="submit"] {
-    font-size: 1rem;
-    padding: 12px;
-    
-    /* Убираем эффект hover на touch-устройствах, чтобы избежать ошибок */
-    /* Эффекты:hover плохо работают на тачскринах, так как нет наведения */
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Эффекты для кнопок на touch-устройствах */
-  button[type="submit"]:active {
-    background-color: #b9110f; /* Цвет при нажатии */
-    transform: translateY(0); /* Отменяем смещение, чтобы кнопка не "прыгала" */
-  }
-    
-}
 
 /* ======================================= */
 /* Мобильные и планшетные стили */
@@ -1006,3 +876,139 @@ p {
       }
  
 }
+
+
+/* ======================================= */
+/* Стили для очень узких экранов (до 540px) */
+/* ======================================= */
+@media (max-width: 540px) {
+    /* Отступ, чтобы контент не скрывался за хедером */
+    .main-content {
+         padding-top: 15vh  !important; 
+     }
+     
+     /* Хедер: выстраиваем всё в один столбец */
+     .header {
+         display: flex;
+         height: 15vh;
+         padding: 0.2rem 1rem;
+         justify-content: space-between;
+
+     }
+ 
+     .navbar {
+         /*flex-direction: row;
+           align-items: center;*/
+         width: 100%;
+         padding: 0 32px 0 0 ;
+     }
+ 
+     /* 1. Логотип (первый элемент) */
+     .header-brand {
+         display: flex;
+         width: 100%;
+
+     }
+ 
+     .header-logo-mobile {
+         object-fit: contain;
+         height: 15vh;
+     }
+ 
+     .school-title {
+         display: none;
+     }
+ 
+     /* 2. Правая колонка с кнопками и гамбургером (второй элемент) */
+     /*.header-right {
+         display: flex;
+         flex-direction: row; 
+         align-items: center;
+         justify-content: space-around;
+         width: 100%;
+         order: 2;
+     }*/
+ 
+     /* 3. Кнопки переключения языка (внутри .header-right) */
+     .lang-switcher {
+
+         order: 1; /* Кнопки будут первым элементом внутри .header-right */
+         margin-bottom: 15px;
+     }
+ 
+     .lang-switcher button {
+         padding: 8px 15px;
+         font-size: 0.9rem;
+     }
+ 
+     /* 4. Гамбургер (внутри .header-right) */
+     .menu-toggle {
+         display: flex;
+         flex-direction: column;
+         gap: 5px;
+         cursor: pointer;
+         background: none;
+         border: none;
+         order: 2; /* Гамбургер будет вторым элементом внутри .header-right */
+     }
+ 
+     .nav-links {
+         display: none; /* Скрываем меню навигации */
+     }
+ 
+     .header-images {
+         flex-direction: column;
+         align-items: center;
+       }
+       /* СКРЫВАЕМ ОРНАМЕНТЫ */
+       .header-images .ornament {
+         display: none;
+       }
+       .header-images .home-logo {
+         max-width: 250px;
+       }
+       .home-content {
+         padding: 1rem;
+       }
+       /*Контактная форма*/
+       .contact-form {
+         /* Эти стили убирают боковые отступы, чтобы форма занимала всю доступную ширину */
+         /* Это обеспечивает идеальное центрирование и не дает ей вылезать за пределы экрана */
+         margin: 0;
+         padding: 8px; /* Уменьшаем внутренний отступ для небольших экранов */
+         border-radius: 10px; /* Опционально: убираем скругление углов на мобильных */
+         box-shadow:  0 10px 25px rgba(0, 0, 0, 0.1);
+       }
+     
+       .contact-form h2 {
+         font-size: 1.5rem; /* Уменьшаем заголовок */
+       }
+     
+       input[type="text"],
+       input[type="email"],
+       textarea,
+       button[type="submit"] {
+         font-size: 0.9rem; /* Уменьшаем размер текста в полях и кнопке */
+         padding: 10px; /* Уменьшаем внутренние отступы */
+       }
+       /* ... другие стили для формы ... */
+   
+   /* =========================================================
+      Кнопка отправки на мобильных
+      ========================================================= */
+   button[type="submit"] {
+     font-size: 1rem;
+     padding: 12px;
+     
+     /* Убираем эффект hover на touch-устройствах, чтобы избежать ошибок */
+     /* Эффекты:hover плохо работают на тачскринах, так как нет наведения */
+     transition: background-color 0.3s ease;
+   }
+   
+   /* Эффекты для кнопок на touch-устройствах */
+   button[type="submit"]:active {
+     background-color: #b9110f; /* Цвет при нажатии */
+     transform: translateY(0); /* Отменяем смещение, чтобы кнопка не "прыгала" */
+   }
+     
+ }
