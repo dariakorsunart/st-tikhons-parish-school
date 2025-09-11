@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/st-tikhons-parish-school/static/css/main.d19c444b.css",
-    "main.js": "/st-tikhons-parish-school/static/js/main.8965f28d.js",
+    "main.js": "/st-tikhons-parish-school/static/js/main.a1cff006.js",
     "static/js/453.21936e2f.chunk.js": "/st-tikhons-parish-school/static/js/453.21936e2f.chunk.js",
     "static/media/slick.svg": "/st-tikhons-parish-school/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/st-tikhons-parish-school/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,11 +9,11 @@
     "static/media/slick.woff": "/st-tikhons-parish-school/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/st-tikhons-parish-school/index.html",
     "main.d19c444b.css.map": "/st-tikhons-parish-school/static/css/main.d19c444b.css.map",
-    "main.8965f28d.js.map": "/st-tikhons-parish-school/static/js/main.8965f28d.js.map",
+    "main.a1cff006.js.map": "/st-tikhons-parish-school/static/js/main.a1cff006.js.map",
     "453.21936e2f.chunk.js.map": "/st-tikhons-parish-school/static/js/453.21936e2f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d19c444b.css",
-    "static/js/main.8965f28d.js"
+    "static/js/main.a1cff006.js"
   ]
 }
