@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/st-tikhons-parish-school/static/css/main.7c1f30c6.css",
-    "main.js": "/st-tikhons-parish-school/static/js/main.be06d1aa.js",
-    "static/js/453.18f8b9aa.chunk.js": "/st-tikhons-parish-school/static/js/453.18f8b9aa.chunk.js",
+    "main.css": "/st-tikhons-parish-school/static/css/main.d19c444b.css",
+    "main.js": "/st-tikhons-parish-school/static/js/main.8965f28d.js",
+    "static/js/453.21936e2f.chunk.js": "/st-tikhons-parish-school/static/js/453.21936e2f.chunk.js",
     "static/media/slick.svg": "/st-tikhons-parish-school/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/st-tikhons-parish-school/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/st-tikhons-parish-school/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/st-tikhons-parish-school/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/st-tikhons-parish-school/index.html",
-    "main.7c1f30c6.css.map": "/st-tikhons-parish-school/static/css/main.7c1f30c6.css.map",
-    "main.be06d1aa.js.map": "/st-tikhons-parish-school/static/js/main.be06d1aa.js.map",
-    "453.18f8b9aa.chunk.js.map": "/st-tikhons-parish-school/static/js/453.18f8b9aa.chunk.js.map"
+    "main.d19c444b.css.map": "/st-tikhons-parish-school/static/css/main.d19c444b.css.map",
+    "main.8965f28d.js.map": "/st-tikhons-parish-school/static/js/main.8965f28d.js.map",
+    "453.21936e2f.chunk.js.map": "/st-tikhons-parish-school/static/js/453.21936e2f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c1f30c6.css",
-    "static/js/main.be06d1aa.js"
+    "static/css/main.d19c444b.css",
+    "static/js/main.8965f28d.js"
   ]
 }
