@@ -1,6 +1,6 @@
-/* ======================================= */
+
 /* Общие стили для всего сайта           */
-/* ======================================= */
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
@@ -9,8 +9,6 @@ body {
     color: #333;
     background-color: #f4f7f6;
 }
-
-
 
 .main-content {
     padding-top: 105px; /* Отступ, чтобы контент не скрывался за хедером */
@@ -42,9 +40,9 @@ p {
     line-height: 1.6;
 }
 
-/* ======================================= */
+
 /* Header и Footer стили                 */
-/* ======================================= */
+
 .header {
     position: fixed;
     top: 0;
@@ -168,13 +166,13 @@ p {
 }
 
 .footer-left {
-    flex: 2; /* Даём левой колонке в два раза больше места */
-    min-width: 300px; /* Убедимся, что она не станет слишком узкой */
+    flex: 2; 
+    min-width: 300px; 
 }
 
 .footer-right {
-    flex: 1; /* Даём правой колонке стандартное место */
-    min-width: 250px; /* Предотвращаем сжатие */
+    flex: 1; 
+    min-width: 250px; 
 }
 
 .footer-left h3 {
@@ -201,9 +199,9 @@ p {
     font-size: 0.8rem;
 }
 
-/* ======================================= */
+
 /* Стили для страниц                      */
-/* ======================================= */
+
 
 /* Home.js */
   .home-content {
@@ -274,13 +272,13 @@ p {
    ========================================================= */
 .ornament-top {
     display: block;
-    margin: auto auto; /* Сдвигает его немного вверх и центрирует */
-    width: 300px; /* Установите желаемый размер */
+    margin: auto auto; 
+    width: 300px; 
     height: auto;
   }
    .about-block {
     display: flex;
-    align-items: flex-start; /* Изменено для выравнивания по верхнему краю */
+    align-items: flex-start; 
     gap: 40px;
     margin-top: 60px;
 }
@@ -291,12 +289,12 @@ p {
 }
 
 .about-text-column {
-    flex: 1; /* Занимает одну часть пространства */
+    flex: 1; 
     min-width: 300px;
 }
 
 .about-image-column {
-    flex: 1; /* Занимает одну часть пространства */
+    flex: 1; 
     min-width: 300px;
 }
 
@@ -323,7 +321,7 @@ p {
 }
 
 .church-image-column {
-    flex: 1.5; /* ИСПРАВЛЕНО: было 1ю5 */
+    flex: 1.5; 
     min-width: 250px;
 }
 
@@ -398,11 +396,11 @@ p {
 
 /* Schedule.js */
 .schedule-container {
-    background-color: #f5f5dc; /* Светло-бежевый цвет. Измените на любой другой! */
+    background-color: #f5f5dc; 
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
-    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05); /* Внутренняя тень для эффекта "подложки" */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05); 
 }
 
 .day-tabs {
@@ -467,14 +465,14 @@ p {
    ========================================================= */
 .google-classroom-button {
     display: inline-block;
-    background-color: #004d40; /* Цвет Google */
+    background-color: #004d40; 
     color: #fff;
     padding: 15px 30px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
-    margin: 20px auto; /* Центрируем кнопку */
+    margin: 20px auto; 
     display: block;
     width: fit-content;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -489,9 +487,9 @@ p {
 }
 
 .button-icon {
-    height: 25px; /* Размер иконки */
+    height: 25px; 
     width: auto;
-    margin-right: 10px; /* Отступ между иконкой и текстом */
+    margin-right: 10px; 
 }
 /* =========================================================
    Галерея
@@ -590,12 +588,12 @@ p {
   
   
   /* =========================================================
-   Контейнер страницы (Центрирует все блоки)
+   Контейнер страницы (Центрируем все блоки)
    ========================================================= */
 .contacts-page {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Центрирует дочерние блоки по горизонтали */
+    align-items: center; 
   }
   
   /* =========================================================
@@ -640,7 +638,7 @@ p {
     margin-bottom: 8px;
     font-weight: bold;
     color: #555;
-    text-align: left; /* Метки полей ввода выровнены по левому краю */
+    text-align: left; 
   }
   
   /* =========================================================
@@ -693,27 +691,26 @@ p {
     transform: translateY(0);
   }
 
-
-
+/* Мобильные и планшетные стили на устройствах до 400px */
   @media (max-width: 400px) {
     /* Общие стили для футера */
     .footer {
-        padding: 1rem; /* Уменьшаем отступы до 1rem для всех сторон */
-        font-size: 0.8rem; /* Немного уменьшаем шрифт для лучшей читаемости */
+        padding: 1rem; 
+        font-size: 0.8rem; 
     }
 
     /* Колонки футера */
     .footer-columns {
-        flex-direction: column; /* Элементы выстраиваются в столбик */
-        align-items: center; /* Центрируем весь столбец */
-        gap: 1.5rem; /* Уменьшаем расстояние между элементами */
+        flex-direction: column; 
+        align-items: center; 
+        gap: 1.5rem; 
     }
 
     /* Отдельные колонки */
     .footer-left,
     .footer-right {
-        min-width: auto; /* Снимаем ограничение минимальной ширины */
-        text-align: center; /* Центрируем текст внутри каждой колонки */
+        min-width: auto; 
+        text-align: center; 
         padding: 0;
         margin: 0;
     }
@@ -721,35 +718,30 @@ p {
     /* Заголовок в левой колонке */
     .footer-left h3 {
         margin-top: 1rem;
-        text-align: center; /* Убеждаемся, что заголовок тоже по центру */
+        text-align: center; 
     }
 
     .contact-form {
-        /* Эти стили убирают боковые отступы, чтобы форма занимала всю доступную ширину */
-        /* Это обеспечивает идеальное центрирование и не дает ей вылезать за пределы экрана */
         margin: 0;
-        padding: 8px; /* Уменьшаем внутренний отступ для небольших экранов */
-        border-radius: 10px; /* Опционально: убираем скругление углов на мобильных */
+        padding: 8px; 
+        border-radius: 10px; 
         box-shadow:  0 10px 25px rgba(0, 0, 0, 0.1);
     }
       .contact-form h2 {
-        font-size: 1.5rem; /* Уменьшаем заголовок */
+        font-size: 1.5rem;
       }
     
       input[type="text"],
       input[type="email"],
       textarea,
       button[type="submit"] {
-        font-size: 0.9rem; /* Уменьшаем размер текста в полях и кнопке */
-        padding: 10px; /* Уменьшаем внутренние отступы */
+        font-size: 0.9rem; 
+        padding: 10px; 
       }
 }
 
+/* Мобильные и планшетные стили на устройствах до 1024px */
 
-/* ======================================= */
-/* Мобильные и планшетные стили */
-/* Применяются на устройствах до 1024px */
-/* ======================================= */
 @media (max-width: 1024px) {
     /* Общие стили */
     body {
@@ -780,7 +772,7 @@ p {
     .navbar {
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-between; /* Выравнивает элементы по краям: логотип слева, кнопки справа */
+        justify-content: space-between; 
         align-items: center;
         padding: 0px 50px 0px 0px;
     }
@@ -790,14 +782,14 @@ p {
         align-items: center;
     }
     .school-title {
-        display: none; /* Скрываем название школы, как вы и хотели */
+        display: none; 
     }
     .header-logo-desktop {
-        display: none; /* Скрываем десктопный логотип */
+        display: none; 
     }
     .header-logo-mobile {
-        display: block; /* Показываем мобильный логотип */
-        height: 100px; /* Делаем его большим и красивым */
+        display: block; 
+        height: 100px; 
         object-fit: contain;
     }
     
@@ -805,7 +797,7 @@ p {
     .header-right-column {
         display: flex;
         align-items: center;
-        gap: 15px; /* Пространство между переключателем языка и гамбургером */
+        gap: 15px; 
     }
 
     .lang-switcher {
@@ -814,7 +806,7 @@ p {
         gap: 5px;
     }
     .lang-switcher button {
-        padding: 3px 6px; /* Уменьшаем кнопки */
+        padding: 3px 6px; 
         font-size: 0.8rem;
     }
     .menu-toggle {
@@ -878,23 +870,19 @@ p {
  
 }
 
-
-/* ======================================= */
 /* Стили для очень узких экранов (до 540px) */
-/* ======================================= */
+
 @media (max-width: 540px) {
     /* Отступ, чтобы контент не скрывался за хедером */
     .main-content {
          padding-top: 15vh  !important; 
      }
      
-     /* Хедер: выстраиваем всё в один столбец */
      .header {
          display: flex;
          height: 15vh;
          padding: 0.2rem 1rem;
          justify-content: space-between;
-
      }
  
      .navbar {
@@ -908,7 +896,6 @@ p {
      .header-brand {
          display: flex;
          width: 100%;
-
      }
  
      .header-logo-mobile {
@@ -933,7 +920,7 @@ p {
      /* 3. Кнопки переключения языка (внутри .header-right) */
      .lang-switcher {
 
-         order: 1; /* Кнопки будут первым элементом внутри .header-right */
+         order: 1; 
          margin-bottom: 15px;
      }
  
@@ -950,18 +937,18 @@ p {
          cursor: pointer;
          background: none;
          border: none;
-         order: 2; /* Гамбургер будет вторым элементом внутри .header-right */
+         order: 2; 
      }
  
      .nav-links {
-         display: none; /* Скрываем меню навигации */
+         display: none; 
      }
  
      .header-images {
          flex-direction: column;
          align-items: center;
        }
-       /* СКРЫВАЕМ ОРНАМЕНТЫ */
+       /* Скрываем орнаменты */
        .header-images .ornament {
          display: none;
        }
@@ -973,43 +960,36 @@ p {
        }
        /*Контактная форма*/
        .contact-form {
-         /* Эти стили убирают боковые отступы, чтобы форма занимала всю доступную ширину */
-         /* Это обеспечивает идеальное центрирование и не дает ей вылезать за пределы экрана */
          margin: 0;
-         padding: 8px; /* Уменьшаем внутренний отступ для небольших экранов */
-         border-radius: 10px; /* Опционально: убираем скругление углов на мобильных */
+         padding: 8px; 
+         border-radius: 10px; 
          box-shadow:  0 10px 25px rgba(0, 0, 0, 0.1);
        }
      
        .contact-form h2 {
-         font-size: 1.5rem; /* Уменьшаем заголовок */
+         font-size: 1.5rem; 
        }
      
        input[type="text"],
        input[type="email"],
        textarea,
        button[type="submit"] {
-         font-size: 0.9rem; /* Уменьшаем размер текста в полях и кнопке */
-         padding: 10px; /* Уменьшаем внутренние отступы */
+         font-size: 0.9rem; 
+         padding: 10px; 
        }
-       /* ... другие стили для формы ... */
-   
+      
    /* =========================================================
       Кнопка отправки на мобильных
       ========================================================= */
    button[type="submit"] {
      font-size: 1rem;
      padding: 12px;
-     
-     /* Убираем эффект hover на touch-устройствах, чтобы избежать ошибок */
-     /* Эффекты:hover плохо работают на тачскринах, так как нет наведения */
      transition: background-color 0.3s ease;
    }
-   
-   /* Эффекты для кнопок на touch-устройствах */
+     
    button[type="submit"]:active {
-     background-color: #b9110f; /* Цвет при нажатии */
-     transform: translateY(0); /* Отменяем смещение, чтобы кнопка не "прыгала" */
+     background-color: #b9110f; 
+     transform: translateY(0); 
    }
      
  }
