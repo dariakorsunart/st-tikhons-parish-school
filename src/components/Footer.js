@@ -14,14 +14,14 @@ function Footer() {
             <p>{t('contacts.address')}</p>
           </div>
           
-          {/* Правая часть футера */}
+          
           <div className="footer-right">
             <p><strong>{t('footer.phone_label')}</strong></p>
             <p><strong>{t('footer.email_label')}</strong></p>
           </div>
         </div>
         
-        {/* Нижняя часть футера (копирайт) */}
+       
         <div className="footer-bottom">
           <p>{t('footer.copyright_text')}</p>
         </div>
