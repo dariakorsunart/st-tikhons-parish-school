@@ -8,7 +8,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-columns">
-          {/* Левая часть футера */}
+         
           <div className="footer-left">
             <h3>{t('footer.school_name')}</h3>
             <p>{t('contacts.address')}</p>
