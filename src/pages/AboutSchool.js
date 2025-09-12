@@ -8,7 +8,7 @@ function AboutSchool() {
       <div className="home-content">
         <h1>{t('about_school.title')}</h1>
         <img src={process.env.PUBLIC_URL +"/images/ornament-top.jpg"} alt="ornament-top-left" className="ornament-top" />
-        {/* Блок 1: Текст слева, Изображение справа */}
+        
         <div className="about-block">
           <div className="about-text-column">
             <h3>{t('about_school.block_1_title')}</h3>
@@ -19,7 +19,7 @@ function AboutSchool() {
           </div>
         </div>
 
-        {/* Блок 2: Изображение слева, Текст справа (reversed) */}
+        
         <div className="about-block reversed">
           <div className="about-text-column">
             <h3>{t('about_school.block_2_title')}</h3>
@@ -30,7 +30,7 @@ function AboutSchool() {
           </div>
         </div>
 
-        {/* Блок 3: Текст слева, Изображение справа */}
+       
         <div className="about-block">
           <div className="about-text-column">
             <h3>{t('about_school.block_3_title')}</h3>
