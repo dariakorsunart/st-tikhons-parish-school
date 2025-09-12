@@ -8,7 +8,7 @@ function Header() {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    setIsOpen(false); // Закрываем меню при смене языка
+    setIsOpen(false); 
   };
 
   const closeMenu = () => {
@@ -42,7 +42,7 @@ function Header() {
           <li><Link to="/gallery" onClick={closeMenu}>{t('header.gallery')}</Link></li>
           <li><Link to="/contacts" onClick={closeMenu}>{t('header.contacts')}</Link></li>    
         </ul>
-         {/* Вот здесь мы добавляем кнопки переключения языка внутрь списка */}
+        
          
          <div className="lang-switcher">
           <button onClick={() => changeLanguage('ru')}>RU</button>
