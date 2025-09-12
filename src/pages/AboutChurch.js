@@ -10,7 +10,7 @@ function AboutChurch() {
         <h2>{t('about_church.greetings')}</h2>
         
         <div className="church-content-grid">
-          {/* Колонка с текстом слева */}
+          
           <div className="church-text-column">
             <p>{t('about_church.description')}</p>
           </div>
