@@ -1,5 +1,4 @@
-
-/* Общие стили для всего сайта           */
+/* Общие стили для всего сайта */
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -11,7 +10,7 @@ body {
 }
 
 .main-content {
-    padding-top: 105px; /* Отступ, чтобы контент не скрывался за хедером */
+    padding-top: 105px; 
     background-color: rgb(243, 221, 182);
 }
 
@@ -25,8 +24,8 @@ body {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 2.5rem;
-    color: #2c3e50; /* Ваш текущий цвет */
-    text-align: center; /* Ваше текущее выравнивание */
+    color: #2c3e50; 
+    text-align: center; 
     margin-top: 50px;
     margin-bottom: 30px;
 }
@@ -40,8 +39,7 @@ p {
     line-height: 1.6;
 }
 
-
-/* Header и Footer стили                 */
+/* Header и Footer стили */
 
 .header {
     position: fixed;
@@ -130,6 +128,7 @@ p {
 }
 
 /* Скрываем мобильную версию кнопок на десктопе */
+
 .lang-switcher-mobile {
     display: none;
 }
@@ -137,7 +136,7 @@ p {
 .header-right {
     display: flex;
     align-items: center;
-    gap: 20px; /* Отступ между меню и кнопками */
+    gap: 20px; 
 }
 
 .menu-toggle {
@@ -199,9 +198,7 @@ p {
     font-size: 0.8rem;
 }
 
-
-/* Стили для страниц                      */
-
+/* Стили для страниц*/
 
 /* Home.js */
   .home-content {
@@ -221,9 +218,8 @@ p {
     margin-bottom: 20px;
   }
   
-  /* =========================================================
-     Стили для контейнера с орнаментами и логотипом
-     ========================================================= */
+  /* Стили для контейнера с орнаментами и логотипом */
+
   .header-images {
     display: flex;
     align-items: center;
@@ -239,6 +235,7 @@ p {
   }
   
   /* Стили для логотипа, который находится внутри .header-images */
+
   .header-images .home-logo {
     max-width: 400px;
     height: auto;
@@ -262,14 +259,14 @@ p {
   }
 
 /* About.js */
+
 .history-section {
     text-align: center;
     margin-bottom: 40px;
 }
 
-/* =========================================================
-   Стили для страницы AboutSchool (чередующиеся блоки)
-   ========================================================= */
+/* Стили для страницы AboutSchool (чередующиеся блоки) */
+
 .ornament-top {
     display: block;
     margin: auto auto; 
@@ -284,6 +281,7 @@ p {
 }
 
 /* Стили для обратного порядка (картинка слева, текст справа) */
+
 .about-block.reversed {
     flex-direction: row-reverse;
 }
@@ -304,9 +302,8 @@ p {
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-/* =========================================================
-   Стили для страницы AboutChurch (два столбца)
-   ========================================================= */
+/* Стили для страницы AboutChurch (два столбца) */
+
 .church-content-grid {
     display: flex;
     flex-wrap: wrap;
@@ -332,10 +329,7 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-/* =========================================================
-   Новые стили для страницы Teachers.js
-   ========================================================= */
+/* Cтили для страницы Teachers.js */
 
    .teachers-list {
     display: grid;
@@ -360,6 +354,7 @@ p {
   }
   
   /* Стили для центрирования последней карточки учителя */
+
   .teachers-list .last-teacher-card {
     grid-column: 1 / -1; 
     justify-self: center;
@@ -395,6 +390,7 @@ p {
   }
 
 /* Schedule.js */
+
 .schedule-container {
     background-color: #f5f5dc; 
     padding: 20px;
@@ -446,9 +442,8 @@ p {
     justify-content: space-between;
 }
 
-/* =========================================================
-   Стили для страницы устава
-   ========================================================= */
+/* Стили для страницы устава */
+
 .charter-page h2 {
     margin-bottom: 20px;
 }
@@ -460,9 +455,8 @@ p {
 }
 
 
-/* =========================================================
-   Стили для страницы календаря
-   ========================================================= */
+/* Стили для страницы календаря */
+
 .google-classroom-button {
     display: inline-block;
     background-color: #004d40; 
@@ -491,9 +485,8 @@ p {
     width: auto;
     margin-right: 10px; 
 }
-/* =========================================================
-   Галерея
-   ========================================================= */
+/* Галерея */
+
    .gallery-section {
     margin-bottom: 3rem;
   }
@@ -528,6 +521,7 @@ p {
   }
   
   /* Модальное окно */
+
   .modal-overlay {
     position: fixed;
     top: 0;
@@ -571,6 +565,7 @@ p {
   }
   
   /* Стрелки Slick Carousel */
+
   .slick-prev:before,
   .slick-next:before {
     font-size: 2rem;
@@ -586,24 +581,21 @@ p {
     opacity: 1;
   }
   
-  
-  /* =========================================================
-   Контейнер страницы (Центрируем все блоки)
-   ========================================================= */
+  /* Контейнер страницы (Центрируем все блоки) */
+
 .contacts-page {
     display: flex;
     flex-direction: column;
     align-items: center; 
   }
   
-  /* =========================================================
-     Блок с контактной информацией
-     ========================================================= */
+  /* Блок с контактной информацией */
+
   .contact-info-block {
-    max-width: 600px; /* Задаем ту же ширину, что и у формы */
+    max-width: 600px; 
     width: 100%;
-    margin: 0 auto 30px; /* Центрируем и добавляем отступ снизу */
-    text-align: left; /* Выравнивает текст внутри блока по левому краю */
+    margin: 0 auto 30px; 
+    text-align: left; 
   }
   
   .contact-info-block p {
@@ -612,9 +604,8 @@ p {
     margin-bottom: 10px;
   }
   
-  /* =========================================================
-     Форма контактов
-     ========================================================= */
+  /* Форма контактов */
+
   .contact-form {
     max-width: 600px;
     width: 100%;
@@ -630,7 +621,7 @@ p {
     margin-bottom: 25px;
     color: #333;
     font-weight: 500;
-    text-align: center; /* Заголовок формы всегда по центру */
+    text-align: center; 
   }
   
   .contact-form label {
@@ -641,9 +632,8 @@ p {
     text-align: left; 
   }
   
-  /* =========================================================
-     Элементы формы (поля ввода, текстовая область)
-     ========================================================= */
+  /* Элементы формы (поля ввода) */
+
   input[type="text"],
   input[type="email"],
   textarea {
@@ -652,11 +642,12 @@ p {
     font-size: 1rem;
     border: 1px solid #ddd;
     border-radius: 6px;
-    box-sizing: border-box; /* Гарантирует, что отступы не добавляют ширины */
+    box-sizing: border-box; 
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
   
   /* Эффект при фокусировке на поле */
+
   input[type="text"]:focus,
   input[type="email"]:focus,
   textarea:focus {
@@ -665,9 +656,8 @@ p {
     outline: none;
   }
   
-  /* =========================================================
-     Кнопка отправки
-     ========================================================= */
+  /* Кнопка отправки */
+
   button[type="submit"] {
     width: 100%;
     padding: 15px;
@@ -682,6 +672,7 @@ p {
   }
   
   /* Эффекты при наведении и нажатии на кнопку */
+
   button[type="submit"]:hover {
     background-color: #b9110f;
     transform: translateY(-2px);
@@ -692,6 +683,7 @@ p {
   }
 
 /* Мобильные и планшетные стили на устройствах до 400px */
+
   @media (max-width: 400px) {
     /* Общие стили для футера */
     .footer {
@@ -700,6 +692,7 @@ p {
     }
 
     /* Колонки футера */
+      
     .footer-columns {
         flex-direction: column; 
         align-items: center; 
@@ -707,6 +700,7 @@ p {
     }
 
     /* Отдельные колонки */
+      
     .footer-left,
     .footer-right {
         min-width: auto; 
@@ -716,6 +710,7 @@ p {
     }
 
     /* Заголовок в левой колонке */
+      
     .footer-left h3 {
         margin-top: 1rem;
         text-align: center; 
@@ -765,6 +760,7 @@ p {
     }
 
     /* Хедер и навигация */
+    
     .header {
         padding: 1rem 1.5rem;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -794,6 +790,7 @@ p {
     }
     
     /* Контейнер для кнопок языка и гамбургера */
+    
     .header-right-column {
         display: flex;
         align-items: center;
@@ -870,7 +867,7 @@ p {
  
 }
 
-/* Стили для очень узких экранов (до 540px) */
+/* Стили для очень узких экранов до 540px */
 
 @media (max-width: 540px) {
     /* Отступ, чтобы контент не скрывался за хедером */
@@ -892,7 +889,7 @@ p {
          padding: 0 32px 0 0 ;
      }
  
-     /* 1. Логотип (первый элемент) */
+     /* Логотип (первый элемент) */
      .header-brand {
          display: flex;
          width: 100%;
@@ -907,7 +904,7 @@ p {
          display: none;
      }
  
-     /* 2. Правая колонка с кнопками и гамбургером (второй элемент) */
+     /* Правая колонка с кнопками и гамбургером (второй элемент) */
      /*.header-right {
          display: flex;
          flex-direction: row; 
@@ -917,9 +914,9 @@ p {
          order: 2;
      }*/
  
-     /* 3. Кнопки переключения языка (внутри .header-right) */
+     /* Кнопки переключения языка (внутри .header-right) */
+    
      .lang-switcher {
-
          order: 1; 
          margin-bottom: 15px;
      }
@@ -929,7 +926,8 @@ p {
          font-size: 0.9rem;
      }
  
-     /* 4. Гамбургер (внутри .header-right) */
+     /* Гамбургер (внутри .header-right) */
+    
      .menu-toggle {
          display: flex;
          flex-direction: column;
@@ -948,7 +946,9 @@ p {
          flex-direction: column;
          align-items: center;
        }
+    
        /* Скрываем орнаменты */
+    
        .header-images .ornament {
          display: none;
        }
@@ -958,7 +958,9 @@ p {
        .home-content {
          padding: 1rem;
        }
+    
        /*Контактная форма*/
+    
        .contact-form {
          margin: 0;
          padding: 8px; 
@@ -978,9 +980,8 @@ p {
          padding: 10px; 
        }
       
-   /* =========================================================
-      Кнопка отправки на мобильных
-      ========================================================= */
+   /* Кнопка отправки на мобильных */
+    
    button[type="submit"] {
      font-size: 1rem;
      padding: 12px;
