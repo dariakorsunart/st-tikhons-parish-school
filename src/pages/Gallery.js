@@ -24,7 +24,6 @@ const gallerySections = {
   concerts: [
     '/images/concert3.jpg',
     '/images/concert4.jpg',
-    '/images/concert5.jpg',
     '/images/concert7.jpg',
     '/images/concert8.jpg',
     '/images/concert9.jpg',

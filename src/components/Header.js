@@ -21,8 +21,9 @@ function Header() {
 
       <nav className="navbar">
       <Link to="/" className="header-brand" onClick={closeMenu}>
-          <h1 className="school-title">Русская Православная Приходская Школа <br/>
-          при Храме cвятителя Тихона <br/> и Новомучеников Российских</h1>
+      <h1 className="school-title">
+            {t('header.school_full_name')}
+          </h1>
            {/* Десктопный логотип */}
           <img src={process.env.PUBLIC_URL +"/images/logo2.jpg"} alt="School logo" className="header-logo-desktop"/>
           <img src={process.env.PUBLIC_URL +"/images/logo1.jpg"} alt="School logo" className="header-logo-mobile"/>    
