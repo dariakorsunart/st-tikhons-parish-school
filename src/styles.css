@@ -10,14 +10,16 @@ body {
 }
 
 .main-content {
-    padding-top: 105px; 
+    margin-top: 110px;
+    padding-top: 0px; 
+    padding-bottom: 8px;
     background-color: rgb(243, 221, 182);
 }
 
 .page {
-    padding: 60px 20px;
+    padding: 60px 20px 0 20px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
 }
 
 .page h1 {
@@ -47,7 +49,7 @@ p {
     width: 100%;
     z-index: 1000;
     background-color: #ffffff;
-    padding: 0.5rem 5rem;
+    padding: 0px 5% 10px 5%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -214,7 +216,7 @@ p {
 /* Home.js */
   .home-content {
     background-color: #ffffff;
-    padding: 2rem;
+    padding: 5px 30px 5px 30px ;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     margin: 0 auto;
@@ -226,7 +228,9 @@ p {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     color: #2c3e50;
-    margin-bottom: 20px;
+    margin: 5px;
+    padding-top:1%;
+   
   }
   
   /* Стили для контейнера с орнаментами и логотипом */
@@ -621,7 +625,7 @@ p {
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
-    padding: 30px;
+    padding: 20px 10px 10px 10px;
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -629,11 +633,13 @@ p {
   
   .contact-form h2 {
     font-size: 2rem;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    margin-top: 0;
     color: #333;
     font-weight: 500;
     text-align: center; 
   }
+ 
   
   .contact-form label {
     display: block;
@@ -645,9 +651,9 @@ p {
   
   /* Элементы формы (поля ввода) */
 
-  input[type="text"],
-  input[type="email"],
+  .contact-form input,
   textarea {
+    margin-bottom: 10px;
     width: 100%;
     padding: 12px;
     font-size: 1rem;
@@ -655,11 +661,12 @@ p {
     border-radius: 6px;
     box-sizing: border-box; 
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Playfair Display', serif;
   }
   
   /* Эффект при фокусировке на поле */
 
-  input[type="text"]:focus,
+  .contact-form input[type="text"]:focus,
   input[type="email"]:focus,
   textarea:focus {
     border-color: #007bff;

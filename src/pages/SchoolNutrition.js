@@ -17,7 +17,7 @@ function SchoolNutrition() {
         <h1>{t('school_nutrition.title')}</h1>
         <p>{t('school_nutrition.text')}</p>
           
-        <div style={{ height: '100%' }}>
+        <div style={{ height: '100vh', borderRadius: '10px', overflow: 'hidden', border: '1px solid black'  }}>
           <Viewer
             fileUrl={pdfUrl}
             plugins={[

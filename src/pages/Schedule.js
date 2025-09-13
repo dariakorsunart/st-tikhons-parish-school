@@ -20,7 +20,7 @@ function Schedule() {
       <div className="home-content">
         <h1>{t('schedule.title')}</h1>
 
-        <div style={{ height: '100%' }}>
+        <div style={{ height: '100vh', borderRadius: '10px', overflow: 'hidden', border: '1px solid black'  }}>
           <Viewer
             fileUrl={pdfUrl}
             plugins={[

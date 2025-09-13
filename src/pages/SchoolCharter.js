@@ -19,7 +19,7 @@ function SchoolCharter() {
       <div className="home-content">
         <h1>{t('charter.title')}</h1>
         
-        <div style={{ height: '100%' }}>
+        <div style={{ height: '100vh', borderRadius: '10px', overflow: 'hidden', border: '1px solid black'  }}>
           <Viewer
             fileUrl={pdfUrl}
             plugins={[

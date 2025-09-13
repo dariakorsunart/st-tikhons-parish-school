@@ -84,7 +84,7 @@
     "message_placeholder": "Message",
     "submit_button": "Submit",
     "success_message": "Message sent successfully!",
-    "error_message": "Error sending message."
+    "error_message": "Error sending your message. Message was not sent! "
   },
   "footer": {
     "school_name": "Russian Orthodox Parish School at St. Tikhon's Church and the New Martyrs of Russia",

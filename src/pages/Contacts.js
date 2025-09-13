@@ -16,7 +16,7 @@ function Contacts() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID')
+    emailjs.send('service_go6h4sk', 'template_roztc8a', formData, 'UyZi-yZk4RG7wtvnD')
       .then((result) => {
         alert(t('contacts.success_message'));
         setFormData({ name: '', email: '', message: '' });
