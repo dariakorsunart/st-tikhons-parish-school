@@ -12,7 +12,6 @@ function Teachers() {
 
       <h1>{t('teachers.teachers_list_title')}</h1>
 
-          {/* Общее фото учителей вверху страницы */}
           <div className="group-photo-container">
           <img 
             src={process.env.PUBLIC_URL +"/images/teachers_photo.jpg"} 
@@ -21,7 +20,6 @@ function Teachers() {
           />
         </div>
       
-        {/* Контейнер для списка учителей */}
         <div className="teachers-list">
           {teachers.map((teacher, index) => (
             <div 

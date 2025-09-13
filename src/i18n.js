@@ -1,8 +1,6 @@
-// src/i18n.js
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-// Импортируем файлы с переводами
 import translationEN from './locales/en/translation.json';
 import translationRU from './locales/ru/translation.json';
 
@@ -19,8 +17,8 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'ru', // Язык по умолчанию
-    fallbackLng: 'en', // Язык на случай, если текущего перевода нет
+    lng: 'ru', 
+    fallbackLng: 'en', 
     interpolation: {
       escapeValue: false,
     },

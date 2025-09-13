@@ -7,7 +7,6 @@ function Home() {
     <div className="page home-page">
       <div className="home-content">
       <h1>{t('about_school.welcome_text')}</h1>
-      {/* НОВЫЙ КОНТЕЙНЕР ДЛЯ ОРНАМЕНТОВ И ЛОГОТИПА */}
       <div className="header-images">
       <img src={process.env.PUBLIC_URL +"/images/ornament-top-left.jpg"} alt="ornament-top-left" className="ornament top-left" />
       <img src={process.env.PUBLIC_URL + "/images/bird2.jpg"} alt="Логотип школы" className="home-logo" />
