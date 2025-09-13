@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect  } from 'react';
 import { useTranslation } from 'react-i18next';
 import emailjs from 'emailjs-com';
 
@@ -10,12 +10,40 @@ function Contacts() {
     message: ''
   });
 
+
+  const [num1, setNum1] = useState(0);
+  const [num2, setNum2] = useState(0);
+  const [answer, setAnswer] = useState(0);
+
+
+  useEffect(() => {
+    generateNewQuestion();
+  }, []);
+
+  const generateNewQuestion = () => {
+    const newNum1 = Math.floor(Math.random() * 10) + 1; // Number between 1 and 10
+    const newNum2 = Math.floor(Math.random() * 10) + 1; // Number between 1 and 10
+    setNum1(newNum1);
+    setNum2(newNum2);
+    setAnswer(newNum1 + newNum2);
+  };
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const userCaptchaAnswer = parseInt(e.target.elements['captcha-answer'].value);
+
+  
+    if (userCaptchaAnswer !== answer) {
+      alert(t('contacts.error_message'));
+      generateNewQuestion(); // Generate a new question for the user
+      return;
+    }
+
     emailjs.send('service_go6h4sk', 'template_roztc8a', formData, 'UyZi-yZk4RG7wtvnD')
       .then((result) => {
         alert(t('contacts.success_message'));
@@ -76,6 +104,16 @@ function Contacts() {
             onChange={handleChange}
             required
           ></textarea>
+          <label htmlFor="captcha-answer">
+            {num1} + {num2}?
+          </label>
+          <input
+            type="number"
+            id="captcha-answer"
+            name="captcha-answer"
+            placeholder="Enter your answer"
+            required
+          />
           <button type="submit">{t('contacts.submit_button')}</button>
         </form>
       </div>
