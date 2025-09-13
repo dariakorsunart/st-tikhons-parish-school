@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Viewer } from '@react-pdf-viewer/core';
+import { Viewer} from '@react-pdf-viewer/core';
 import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 
 import '@react-pdf-viewer/core/lib/styles/index.css';
@@ -13,14 +13,16 @@ function Schedule() {
   const { t } = useTranslation();
 
   const pdfUrl = process.env.PUBLIC_URL +'/Schedule 2025-2026.pdf';
-  const defaultLayoutPluginInstance = defaultLayoutPlugin();
+  const defaultLayoutPluginInstance = defaultLayoutPlugin( 
+    
+  );
 
   return (
     <div className="page schedule-page">
       <div className="home-content">
         <h1>{t('schedule.title')}</h1>
 
-        <div style={{ height: '100vh', borderRadius: '10px', overflow: 'hidden', border: '1px solid black'  }}>
+        <div style={{borderRadius: '10px', overflow: 'hidden', border: '1px solid black'  }}>
           <Viewer
             fileUrl={pdfUrl}
             plugins={[

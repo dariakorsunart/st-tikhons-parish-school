@@ -111,7 +111,7 @@ function Contacts() {
             type="number"
             id="captcha-answer"
             name="captcha-answer"
-            placeholder="Enter your answer"
+            placeholder={t('contacts.capitcha_answer_placeholder')}
             required
           />
           <button type="submit">{t('contacts.submit_button')}</button>

@@ -10,14 +10,13 @@ body {
 }
 
 .main-content {
-    margin-top: 110px;
-    padding-top: 0px; 
+    margin-top: 22vh;
     padding-bottom: 8px;
     background-color: rgb(243, 221, 182);
 }
 
 .page {
-    padding: 60px 20px 0 20px;
+    padding: 10px 20px 0 20px;
     max-width: 1200px;
     margin: 0 auto 0 auto;
 }
@@ -35,6 +34,7 @@ body {
 h2, h3 {
     color: #2c3e50;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 p {
@@ -49,12 +49,14 @@ p {
     width: 100%;
     z-index: 1000;
     background-color: #ffffff;
-    padding: 0px 5% 10px 5%;
+    padding: 0px 5% 20px 5%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
 }
 
 .navbar {
     display: flex;
+    height: 100%;
     justify-content: space-between;
     align-items: center;
     max-width: 1400px;
@@ -78,8 +80,9 @@ p {
 
 .header-logo-desktop {
     display: block;
-    height: 120px;
+    height: 15vh;
     object-fit: contain;
+    padding-left: 30px;
 }
 
 .header-logo-mobile {
@@ -121,7 +124,7 @@ p {
     display: flex;
     gap: 10px;
     align-items: baseline;
-    /*margin-top: 30px; */  
+    margin: auto auto; 
 }
 
 .lang-switcher button {
@@ -150,6 +153,8 @@ p {
     display: flex;
     align-items: center;
     gap: 20px; 
+    width: 100%;
+
 }
 
 .menu-toggle {
@@ -266,11 +271,12 @@ p {
   .home-content p,
   .home-content li {
     line-height: 1.6;
+    text-align: justify;
   }
   
   .home-content ul {
     list-style-type: disc;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
   }
 
 /* About.js */
@@ -335,10 +341,11 @@ p {
 .church-image-column {
     flex: 1.5; 
     min-width: 250px;
+    width: 100%;
 }
 
 .church-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -700,58 +707,9 @@ p {
     transform: translateY(0);
   }
 
-/* Мобильные и планшетные стили на устройствах до 400px */
 
-  @media (max-width: 400px) {
-    /* Общие стили для футера */
-    .footer {
-        padding: 1rem; 
-        font-size: 0.8rem; 
-    }
+ 
 
-    /* Колонки футера */
-      
-    .footer-columns {
-        flex-direction: column; 
-        align-items: center; 
-        gap: 1.5rem; 
-    }
-
-    /* Отдельные колонки */
-      
-    .footer-left,
-    .footer-right {
-        min-width: auto; 
-        text-align: center; 
-        padding: 0;
-        margin: 0;
-    }
-
-    /* Заголовок в левой колонке */
-      
-    .footer-left h3 {
-        margin-top: 1rem;
-        text-align: center; 
-    }
-
-    .contact-form {
-        margin: 0;
-        padding: 8px; 
-        border-radius: 10px; 
-        box-shadow:  0 10px 25px rgba(0, 0, 0, 0.1);
-    }
-      .contact-form h2 {
-        font-size: 1.5rem;
-      }
-    
-      input[type="text"],
-      input[type="email"],
-      textarea,
-      button[type="submit"] {
-        font-size: 0.9rem; 
-        padding: 10px; 
-      }
-}
 
 /* Мобильные и планшетные стили на устройствах до 1024px */
 
@@ -761,10 +719,11 @@ p {
         font-size: 16px;
     }
     .main-content {
-        padding-top: 60px;
+        padding-top: 1vh;
+        margin-top:10vh;
     }
     .page {
-        padding: 20px 10px;
+        padding: 0 10px;
     }
     .about-block, .about-block.reversed, .church-content-grid {
         flex-direction: column;
@@ -780,8 +739,13 @@ p {
     /* Хедер и навигация */
     
     .header {
-        padding: 1rem 1.5rem;
+  
+        padding: 0 1.5rem 0 1.5rem;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-right{
+      justify-content: right;
     }
     .navbar {
         display: flex;
@@ -803,8 +767,9 @@ p {
     }
     .header-logo-mobile {
         display: block; 
-        height: 100px; 
         object-fit: contain;
+        max-height: 14vh;
+        height: 100%;
     }
     
     /* Контейнер для кнопок языка и гамбургера */
@@ -819,6 +784,7 @@ p {
         display: flex;
         flex-direction: column;
         gap: 5px;
+        margin: 0;
     }
     .lang-switcher button {
         padding: 3px 6px; 
@@ -846,7 +812,7 @@ p {
         width: 100%;
         margin-top: 20px;
         position: absolute;
-        top: 80px;
+        top: 10vh;
         left: 0;
         background-color: #ffffff;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -877,7 +843,7 @@ p {
         padding: 1.5rem;
       }
       .header-images .ornament {
-        width: 150px;
+        width: 140px;
       }
       .header-images .home-logo {
         max-width: 300px;
@@ -890,7 +856,7 @@ p {
 @media (max-width: 540px) {
     /* Отступ, чтобы контент не скрывался за хедером */
     .main-content {
-         padding-top: 15vh  !important; 
+         padding-top: 25%  !important; 
      }
      
      .header {
@@ -961,7 +927,7 @@ p {
      }
  
      .header-images {
-         flex-direction: column;
+         flex-direction: 5column;
          align-items: center;
        }
     
@@ -974,13 +940,16 @@ p {
          max-width: 250px;
        }
        .home-content {
-         padding: 1rem;
+         padding-left:  2%;
+         padding-right: 2%;
+         width: 95%;
        }
     
        /*Контактная форма*/
     
        .contact-form {
          margin: 0;
+         width: 95%;
          padding: 8px; 
          border-radius: 10px; 
          box-shadow:  0 10px 25px rgba(0, 0, 0, 0.1);
@@ -1012,3 +981,57 @@ p {
    }
      
  }
+
+ @media (max-width: 412px) {
+  .main-content {
+    padding-top: 7vh  !important; 
+}
+  /* Общие стили для футера */
+  .footer {
+      padding: 1rem; 
+      font-size: 0.8rem; 
+  }
+
+  /* Колонки футера */
+    
+  .footer-columns {
+      flex-direction: column; 
+      align-items: center; 
+      gap: 1.5rem; 
+  }
+
+  /* Отдельные колонки */
+    
+  .footer-left,
+  .footer-right {
+      min-width: auto; 
+      text-align: center; 
+      padding: 0;
+      margin: 0;
+  }
+
+  /* Заголовок в левой колонке */
+    
+  .footer-left h3 {
+      margin-top: 1rem;
+      text-align: center; 
+  }
+
+  .contact-form {
+      margin: 0;
+      padding: 8px; 
+      border-radius: 10px; 
+      box-shadow:  0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+    .contact-form h2 {
+      font-size: 1.5rem;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    button[type="submit"] {
+      font-size: 0.9rem; 
+      padding: 10px; 
+    }
+}
