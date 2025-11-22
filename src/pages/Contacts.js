@@ -7,6 +7,8 @@ function Contacts() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    childName: '',
+    childAge: '',
     message: ''
   });
 
@@ -47,7 +49,7 @@ function Contacts() {
     emailjs.send('service_go6h4sk', 'template_roztc8a', formData, 'UyZi-yZk4RG7wtvnD')
       .then((result) => {
         alert(t('contacts.success_message'));
-        setFormData({ name: '', email: '', message: '' });
+        setFormData({ name: '', email: '', childName: '', childAge: '', message: '' });
       }, (error) => {
         alert(t('contacts.error_message'));
       });
@@ -94,6 +96,22 @@ function Contacts() {
             name="email"
             placeholder={t('contacts.email_placeholder')}
             value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="text"
+            name="childName"
+            placeholder={t('contacts.child_name_placeholder')} 
+            value={formData.childName}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="text" 
+            name="childAge"
+            placeholder={t('contacts.child_age_placeholder')}
+            value={formData.childAge}
             onChange={handleChange}
             required
           />

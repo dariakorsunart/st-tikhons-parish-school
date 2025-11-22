@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import React, { useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -13,9 +14,28 @@ import Gallery from './pages/Gallery';
 import Contacts from './pages/Contacts';
 import './styles.css';
 
+const GA_TRACKING_ID = 'G-2EF6NF3WCJ';
+function GATracker() {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Check if the gtag function exists (it should, from the script in index.html)
+    if (typeof window.gtag === 'function') {
+      // Send the 'page_view' event to GA4 whenever the route changes.
+      window.gtag('config', GA_TRACKING_ID, {
+        'page_path': location.pathname + location.search,
+        'page_title': document.title // Optional: Sends the document title
+      });
+    }
+  }, [location]); // Re-run this effect every time 'location' changes
+
+  return null; // This component doesn't render anything
+}
+
 function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <GATracker />
       <Header />
       <div className="main-content">
         <Routes>

@@ -1,7 +1,7 @@
 {
   "header": {
     "school_title": "Home",
-    "school_full_name": "Russian Orthodox Church Outside of Russia of St. Patriarch Tikhon and the New Martyrs of Russia",
+    "school_full_name": "Russian Orthodox Parish School at the Church of St. Tikhon and the New Martyrs of Russia",
     "about_school": "About School",
     "about_church": "About Church",
     "teachers": "Teachers",
@@ -13,8 +13,8 @@
     "contacts": "Contacts"
   },
   "home": {
-    "welcome": "Russian Orthodox Parish School at the Church of St. Tikhon",
-    "mission_text": "We welcome you, dear ones in Christ, to the website of the Russian Orthodox Church Outside of Russia of St. Patriarch Tikhon and the New Martyrs of Russia!"
+    "welcome": "Russian Orthodox Parish School at the Church of St. Tikhon and the New Martyrs of Russia",
+    "mission_text": "We welcome you, dear ones in Christ, to the website of the Russian Orthodox Parish School at the Church of St. Tikhon and the New Martyrs of Russia!"
   },
  "about_school": {
   "title": "About the School",
@@ -79,8 +79,10 @@
     "head_teacher": "Vice Principal: Elena A. Sidorova",
     "phone": "phone: +1 (226)-978-3810",
     "form_title": "Registration Form",
-    "name_placeholder": "Full Name",
+    "name_placeholder": "Parent Full Name",
     "email_placeholder": "Email",
+    "child_name_placeholder":"Child Name",
+    "child_age_placeholder":"Child Age",
     "message_placeholder": "Message",
     "submit_button": "Submit",
     "success_message": "Message sent successfully!",
