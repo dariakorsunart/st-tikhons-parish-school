@@ -2,6 +2,8 @@
 
 This is the official website for the Russian Orthodox Parish School at St. Tikhon's Church and the New Martyrs of Russia. The site provides essential information about the school's mission, curriculum, schedule, and contact details, serving as a hub for students, parents, and the community. Specifically one can learn about the school's curriculum, including subjects like Divine Law, Russian History, and Language.
 
+The site is accessible via https://dariakorsunart.github.io/st-tikhons-parish-school/ and https://sttikhon.org/school/ dev and production links.
+
 -----
 
 ## Features
