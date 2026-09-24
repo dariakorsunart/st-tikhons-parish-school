@@ -12,7 +12,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.j
 function Schedule() {
   const { t } = useTranslation();
 
-  const pdfUrl = process.env.PUBLIC_URL +'/Schedule 2025-2026.pdf';
+  const pdfUrl = process.env.PUBLIC_URL +'/Schedule 2026-2027.pdf';
   const defaultLayoutPluginInstance = defaultLayoutPlugin( 
     
   );
@@ -34,13 +34,12 @@ function Schedule() {
         <p style={{ textAlign: 'center' }}>{t('calendar.text')}</p>
 
         <a 
-        href="https://classroom.google.com/c/NzE0MDYxMjUyNTkz" 
+        href="http://etorontoe.beget.tech/" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="google-classroom-button"
       >
-         <img src={process.env.PUBLIC_URL +"/images/google-classroom.png"} alt="Google Classroom Icon" className="button-icon" />
-        {t('Google Classroom')}
+        {t('Homework')}
       </a>
       </div>
     </div>
